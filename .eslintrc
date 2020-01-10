@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["healthier", "security", "unicorn"],
+  "extends": [
+    "healthier",
+    "plugin:security/recommended",
+    "plugin:unicorn/recommended"
+  ],
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    "curly": ["error", "all"],
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "SequenceExpression",
+        "message": "Sequence expressions (the comma operator) are not allowed. See eslint no-sequences."
+      }
+    ]
+  }
+}

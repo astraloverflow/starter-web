@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "license": "",
+  "version": "2020-1-9",
+  "name": "@astraloverflow/starter-web",
+  "description": "A minimal config starter template for web projects",
+  "repository": "",
+  "scripts": {
+    "test": "stylelint \"_styles/**/*.scss\" && eslint \"_scripts/**/*.js\"",
+    "format": "prettier --write",
+    "dev": "cross-env NODE_ENV=development parcel index.html",
+    "prod": "cross-env NODE_ENV=production parcel build index.html"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "bulma": "0.8.0",
+    "cash-dom": "6.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.7",
+    "@babel/preset-env": "7.7.7",
+    "babel-eslint": "10.0.3",
+    "cross-env": "6.0.3",
+    "eslint": "6.8.0",
+    "eslint-config-healthier": "3.2.0",
+    "eslint-plugin-healthier": "2.1.0",
+    "eslint-plugin-security": "1.4.0",
+    "eslint-plugin-unicorn": "15.0.1",
+    "parcel-bundler": "1.12.4",
+    "prettier": "1.19.1",
+    "sass": "1.24.3",
+    "stylelint": "12.0.1",
+    "stylelint-config-astraloverflow": "astraloverflow/stylelint-config-astraloverflow#2.0.1"
+  }
+}

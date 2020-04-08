@@ -20,7 +20,7 @@ It can alternatively be used with CodeSandBox.io, though not all functionality w
 
 ```shell
 $ cd ~/dev/
-$ npx degit astraloverflow/starter-web#2020-1-9 my-new-website
+$ npx degit astraloverflow/starter-web#2020.4.7 my-new-website
 $ cd my-new-website
 $ npm install
 $ npm run dev

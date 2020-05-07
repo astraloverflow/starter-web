@@ -20,7 +20,7 @@ It can alternatively be used with CodeSandBox.io, though not all functionality w
 
 ```shell
 $ cd ~/dev/
-$ npx degit astraloverflow/starter-web#2020.4.7 my-new-website
+$ npx degit astraloverflow/starter-web#2020.5.6 my-new-website
 $ cd my-new-website
 $ npm install
 $ npm run dev
@@ -32,7 +32,8 @@ $ npm run dev
 
 ### `npm run test`
 
-- Runs [stylelint](https://stylelint.io) (using [stylelint-config-astraloverflow](https://github.com/astraloverflow/stylelint-config-astraloverflow), see `.stylelintrc`) and [eslint](https://eslint.org) (using [healthier](https://github.com/KidkArolis/healthier) and more, see `.eslintrc`) to check files for syntax and coding style errors.
+- Runs [stylelint](https://stylelint.io) (see `.stylelintrc`) and [eslint](https://eslint.org) (see `.eslintrc.js`) to check files for syntax and coding style errors.
+- Runs `tsc --noEmit` to check typescript types and compliation errors
 
 ### `npm run format`
 
@@ -48,9 +49,31 @@ $ npm run dev
 
 ---
 
+## LICENSE
+
+Unless you want to release your project into the public domain via CC0 (which this project does), you should replace the contents of [`LICENSE`](./LICENSE) with a license of your choosing (MIT, BSD, GPL, etc.)
+
+---
+
+## .gitignore
+
+Inside of [`.gitignore`](./.gitignore) you will find the following
+
+```ini
+# These files lock down the project's node dependencies
+# These are only here for the development of starter-web
+# You should remove whichever one you are using in your project
+package-lock.json
+yarn.lock
+```
+
+As the comment in the file says, you should remove one of those two lines if you want to use the "version locking" features of either one, especially if you are developing with other people or on multiple computers/servers or are using a CI.
+
+---
+
 ## Package.json
 
-It is HIGHLY recommended that you customize `package.json` with the details of your project, mainly the following fields:
+It is highly recommended that you customize `package.json` with the details of your project, mainly the following fields:
 
 ```jsonc
 {

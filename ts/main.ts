@@ -1,4 +1,5 @@
-import 'babel-polyfill';
+// importing cash.esm.js instead of cash.ts because
+// of typescript errors from cash.ts
 import $ from 'cash-dom/dist/cash.esm';
 
 $('#navbar-toggle').on('click', () =>

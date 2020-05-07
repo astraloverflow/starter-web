@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types"],
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "./dist/",
+    "baseUrl": "./ts",
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "newLine": "LF",
+    "jsx": "react"
+  }
+}

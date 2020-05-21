@@ -6,7 +6,7 @@
     "allowJs": true,
     "checkJs": true,
     "outDir": "./dist/",
-    "baseUrl": "./ts",
+    "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"]
     },

@@ -1,7 +1,7 @@
 {
   "private": true,
   "license": "",
-  "version": "2020.5.6",
+  "version": "2020.6.30",
   "name": "@astraloverflow/starter-web",
   "description": "A minimal config starter template for web projects",
   "repository": "",

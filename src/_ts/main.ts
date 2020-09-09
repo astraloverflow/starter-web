@@ -1,6 +1,4 @@
-// importing cash.esm.js instead of cash.ts because
-// of typescript errors from cash.ts
-import $ from 'cash-dom/dist/cash.esm';
+import $ from 'cash-dom/dist/cash';
 
 $('#example-toggle').on('click', () =>
   // Check if element with the id #example-toggle has the .is-active class

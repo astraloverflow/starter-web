@@ -14,13 +14,11 @@
 - Node.js (LTS or newer).
 - Latest NPM (comes included with Node.js) or Yarn.
 
-It can alternatively be used with CodeSandBox.io, though not all functionality will be available.
-
 ## Quick Start
 
 ```shell
 $ cd ~/dev/
-$ npx degit astraloverflow/starter-web#2020.6.30 my-new-website
+$ npx degit astraloverflow/starter-web#2020.9.9 my-new-website
 $ cd my-new-website
 $ npm install
 $ npm run dev
@@ -32,7 +30,7 @@ $ npm run dev
 
 ### `npm run test`
 
-- Runs [stylelint](https://stylelint.io) (see `.stylelintrc`) and [eslint](https://eslint.org) (see `.eslintrc.js`) to check files for syntax and coding style errors.
+- Runs [stylelint](https://stylelint.io) (see `.stylelintrc.js`) and [eslint](https://eslint.org) (see `.eslintrc.js`) to check files for syntax and coding style errors.
 - Runs `tsc --noEmit` to check typescript types and compliation errors
 
 ### `npm run format`

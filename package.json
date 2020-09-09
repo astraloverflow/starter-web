@@ -1,7 +1,7 @@
 {
   "private": true,
   "license": "",
-  "version": "2020.6.30",
+  "version": "2020.9.9",
   "name": "@astraloverflow/starter-web",
   "description": "A minimal config starter template for web projects",
   "repository": "",
@@ -10,37 +10,40 @@
     "test:codestyle": "stylelint \"src/**/*.css\" && eslint \"src/**/*.ts\"",
     "test:codequality": "tsc --noEmit && jest",
     "format": "prettier --write",
-    "dev": "cross-env NODE_ENV=development parcel index.html",
-    "prod": "cross-env NODE_ENV=production parcel build index.html"
+    "dev": "cross-env NODE_ENV=development parcel src/index.html",
+    "prod": "cross-env NODE_ENV=production parcel build src/index.html"
   },
   "dependencies": {
-    "cash-dom": "7.0.1",
-    "tailwindcss": "1.4.5"
+    "cash-dom": "8.0.0",
+    "tailwindcss": "1.8.6"
   },
   "devDependencies": {
-    "@types/jest": "25.2.1",
-    "@typescript-eslint/eslint-plugin": "2.31.0",
-    "@typescript-eslint/parser": "2.31.0",
-    "autoprefixer": "9.7.6",
+    "@types/jest": "26.0.13",
+    "@typescript-eslint/eslint-plugin": "4.1.0",
+    "@typescript-eslint/parser": "4.1.0",
+    "autoprefixer": "9.8.6",
     "cross-env": "7.0.2",
-    "eslint": "6.8.0",
+    "eslint": "7.8.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-standard": "14.1.1",
     "eslint-config-standard-jsx": "8.1.0",
-    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-import": "2.22.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react": "7.20.6",
     "eslint-plugin-security": "1.4.0",
     "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-unicorn": "19.0.1",
-    "jest": "26.0.1",
+    "eslint-plugin-unicorn": "21.0.0",
+    "jest": "26.4.2",
     "parcel-bundler": "1.12.4",
-    "postcss-modules": "2.0.0",
-    "prettier": "2.0.4",
-    "stylelint": "13.3.3",
-    "stylelint-config-astraloverflow": "astraloverflow/stylelint-config-astraloverflow#2.0.2",
-    "ts-jest": "25.5.1",
-    "typescript": "3.8.3"
+    "postcss-modules": "3.2.2",
+    "prettier": "2.1.1",
+    "stylelint": "13.7.0",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-order": "4.1.0",
+    "stylelint-scss": "3.18.0",
+    "ts-jest": "26.3.0",
+    "typescript": "4.0.2"
   }
 }

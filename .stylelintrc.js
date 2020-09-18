@@ -10,6 +10,12 @@ module.exports = {
       'at-rules',
       'rules',
     ],
+    'selector-type-no-unknown': [
+      true,
+      {
+        ignore: ['custom-elements'],
+      },
+    ],
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': null,
   },

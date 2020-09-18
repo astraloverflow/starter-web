@@ -1,7 +1,7 @@
 import $ from 'cash-dom/dist/cash';
 
 $('#example-toggle').on('click', () =>
-  // Check if element with the id #example-toggle has the .is-active class
+  // Check if element with the id #example-toggle has the .font-bold class
   $('#example-toggle').hasClass('font-bold')
     ? // if .font-bold is already present
       $('#example-toggle').removeClass('font-bold')

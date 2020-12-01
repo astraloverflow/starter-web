@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "ESNext",
     "moduleResolution": "node",
-    "typeRoots": ["node_modules/@types"],
     "allowJs": true,
     "checkJs": true,
+    "skipLibCheck": true,
     "outDir": "./dist/",
-    "baseUrl": "./src/.ts/",
-    "paths": {
-      "~/*": ["./*"]
-    },
+    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types"],
     "newLine": "LF",
-    "jsx": "react"
+    "jsx": "react",
+    "jsxFactory": "h"
   }
 }

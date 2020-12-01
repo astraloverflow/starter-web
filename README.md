@@ -5,7 +5,7 @@
 [![Last Commit][last-commit-img]](https://github.com/astraloverflow/starter-web/commits/master)
 [![Open Issues][issues-img]](https://github.com/astraloverflow/starter-web/issues)
 
-> A minimal config starter template for web projects
+> A starter template for web projects
 
 ---
 
@@ -18,7 +18,7 @@
 
 ```shell
 $ cd ~/dev/
-$ npx degit astraloverflow/starter-web#2020.9.17 my-new-website
+$ npx degit astraloverflow/starter-web#2020.11.30 my-new-website
 $ cd my-new-website
 $ npm install
 $ npm run dev

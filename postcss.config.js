@@ -2,6 +2,7 @@
 if (process.env.NODE_ENV === 'production') {
   module.exports = {
     plugins: [
+      require('tailwindcss'),
       require('autoprefixer'),
       require('cssnano')({
         preset: 'default',
@@ -10,6 +11,6 @@ if (process.env.NODE_ENV === 'production') {
   };
 } else {
   module.exports = {
-    plugins: [require('autoprefixer')],
+    plugins: [require('tailwindcss')],
   };
 }

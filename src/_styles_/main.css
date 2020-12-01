@@ -1,0 +1,7 @@
+html {
+  @apply bg-gray-100;
+}
+
+.button {
+  @apply px-5 py-3 mt-4 font-semibold bg-gray-300 rounded shadow;
+}

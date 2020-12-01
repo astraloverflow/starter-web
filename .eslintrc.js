@@ -10,6 +10,7 @@ module.exports = {
     'promise',
     'node',
     'standard',
+    'compat',
     'security',
     'unicorn',
   ],
@@ -19,6 +20,8 @@ module.exports = {
     // Standardjs JavaScript Coding Style
     'standard',
     'standard-jsx',
+    // Error when using features not supported by browserlist selection (see package.json)
+    'plugin:compat/recommended',
     // Some useful rules to avoid JavaScript security issues
     'plugin:security/recommended',
     // A mishmash of useful rules
@@ -36,7 +39,8 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'arrow-body-style': ['error', 'as-needed'],
     curly: ['error', 'all'],
     'no-restricted-syntax': [

@@ -1,7 +1,6 @@
 # Starter-Web
 
 [![License][license-img]](https://github.com/astraloverflow/starter-web/blob/master/LICENSE)
-[![Version][version-img]](https://github.com/astraloverflow/starter-web/releases)
 [![Last Commit][last-commit-img]](https://github.com/astraloverflow/starter-web/commits/master)
 [![Open Issues][issues-img]](https://github.com/astraloverflow/starter-web/issues)
 
@@ -12,13 +11,13 @@
 ## Requirements
 
 - Node.js (LTS or newer).
-- Latest NPM (comes included with Node.js) or Yarn.
+- NPM (comes included with Node.js) or Yarn.
 
 ## Quick Start
 
 ```shell
 $ cd ~/dev/
-$ npx degit astraloverflow/starter-web#2020.11.30 my-new-website
+$ npx degit astraloverflow/starter-web#2022.6.1 my-new-website
 $ cd my-new-website
 $ npm install
 $ npm run dev
@@ -37,13 +36,13 @@ $ npm run dev
 
 - Runs [Prettier](https://prettier.io) to format all code to the same style. See Prettier website for full list of supported languages. Best used with the Prettier plugin for your chosen editor.
 
-### `npm run prod`
-
-- Runs Parcel in production mode and builds the project.
-
 ### `npm run dev`
 
 - Runs Parcel in development mode and runs a development server.
+
+### `npm run prod`
+
+- Runs Parcel in production mode and builds the project.
 
 ---
 
@@ -93,6 +92,5 @@ It is highly recommended that you customize `package.json` with the details of y
 ```
 
 [license-img]: https://img.shields.io/github/license/astraloverflow/starter-web.svg
-[version-img]: https://img.shields.io/github/release/astraloverflow/starter-web.svg
 [last-commit-img]: https://img.shields.io/github/last-commit/astraloverflow/starter-web.svg
 [issues-img]: https://img.shields.io/github/issues-raw/astraloverflow/starter-web.svg

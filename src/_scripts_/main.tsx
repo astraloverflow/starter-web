@@ -1,9 +1,7 @@
 import 'preact/debug';
 import { h, Component, render } from 'preact';
 import { useState, useCallback } from 'preact/hooks';
-import sum from './sum'; // importing a typescript file works!
-
-// JSX because nothing I do makes TSX play nice with custom elements
+import sum from './sum';
 
 function App() {
   const [value, setValue] = useState(0);

@@ -17,7 +17,7 @@
 
 ```shell
 $ cd ~/dev/
-$ npx degit astraloverflow/starter-web#2022.6.1 my-new-website
+$ npx degit astraloverflow/starter-web#2022.11.26 my-new-website
 $ cd my-new-website
 $ npm install
 $ npm run dev

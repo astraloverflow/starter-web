@@ -1,6 +1,7 @@
 # Should always be in .gitignore unless you know what you're doing
 node_modules/
 .parcel-cache/
+.DS_Store
 
 # Remove this line if you want keep the generated site in git
 dist/

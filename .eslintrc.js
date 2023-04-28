@@ -1,3 +1,4 @@
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',

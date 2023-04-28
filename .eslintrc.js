@@ -1,22 +1,13 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-    'import',
-    'promise',
-    'node',
-    'standard',
-    'compat',
-    'security',
-    'unicorn',
-  ],
+  plugins: ['@typescript-eslint', 'compat', 'security', 'unicorn'],
   extends: [
     // Typescript recommended rules
     'plugin:@typescript-eslint/recommended',
     // Standardjs JavaScript Coding Style
-    'standard',
-    'standard-jsx',
+    'semistandard',
+    // 'standard-jsx',
     // Error when using features not supported by browserlist selection (see package.json)
     'plugin:compat/recommended',
     // Some useful rules to avoid JavaScript security issues
@@ -26,13 +17,6 @@ module.exports = {
     // Unsets rules that conflict with Prettier
     // _MUST_ always come last
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/babel',
-    'prettier/flowtype',
-    'prettier/react',
-    'prettier/standard',
-    'prettier/unicorn',
-    'prettier/vue',
   ],
   rules: {
     'no-unused-vars': 'off',

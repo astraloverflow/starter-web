@@ -1,13 +1,24 @@
 import 'preact/debug';
 import { h, Component, render } from 'preact';
-import { useState, useCallback } from 'preact/hooks';
+import { signal } from '@preact/signals';
 import sum from './sum';
 
+const count = signal(Number(sessionStorage.getItem('count')) || 0);
+
 function App() {
-  const [value, setValue] = useState(0);
-  const increment = useCallback(() => {
-    setValue(sum(value, 1));
-  }, [value]);
+  const value = count.value;
+  const increment = () => {
+    count.value++;
+    sessionStorage.setItem('count', String(count.value));
+  };
+  const decrement = () => {
+    count.value--;
+    sessionStorage.setItem('count', String(count.value));
+  };
+  const reset = () => {
+    count.value = 0;
+    sessionStorage.setItem('count', String(count.value));
+  };
 
   return (
     <div class="p-4 bg-white rounded-lg shadow">
@@ -21,6 +32,14 @@ function App() {
       </p>
       <button class="button" onClick={increment}>
         Increment
+      </button>
+      &nbsp;
+      <button class="button" onClick={decrement}>
+        decrement
+      </button>
+      &nbsp;
+      <button class="button" onClick={reset}>
+        Reset
       </button>
     </div>
   );

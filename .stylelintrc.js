@@ -2,16 +2,21 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-no-unsupported-browser-features', 'stylelint-order'],
   rules: {
-    // Error when using features not supported by browserlist selection (see package.json)
-    'plugin/no-unsupported-browser-features': true,
+    // Warn when using features not supported by browserlist selection (see package.json)
+    'plugin/no-unsupported-browser-features': [
+      true,
+      {
+        severity: 'warning',
+      },
+    ],
     // Enforce alphabetical property order + grouping by type
     'order/properties-alphabetical-order': true,
     'order/order': [
       'dollar-variables',
       'custom-properties',
       'declarations',
-      'at-rules',
       'rules',
+      'at-rules',
     ],
     // Error on unknown html elements unless they match custom elements pattern
     // e.g. <my-element />
